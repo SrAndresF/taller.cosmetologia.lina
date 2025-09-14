@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado de Reconocimiento - Taller de Esteticismo y Cosmética</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+        
+        .certificate-border {
+            background: white;
+            border: 8px solid #F7B5D3;
+        }
+        
+        .ornament {
+            background: linear-gradient(135deg, #F7B5D3, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .signature-line {
+            border-bottom: 2px solid #374151;
+            position: relative;
+        }
+        
+        .signature-line::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #F7B5D3, #ec4899);
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 font-sans">
+    <div class="max-w-4xl mx-auto">
+        <!-- Certificado -->
+        <div class="certificate-border bg-white p-12 shadow-2xl">
+            <!-- Header ornamental -->
+            <div class="text-center mb-8">
+                <div class="flex justify-center ">
+                    <div class="flex justify-center left-0 top-2 w-32 bg-gray-100 rounded-xl">
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/1J8DZ0n6/Dise-o-sin-t-tulo.png" alt="Dise-o-sin-t-tulo" border="0"></a>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2" style="font-family: 'Playfair Display', serif;">
+                    CERTIFICADO DE RECONOCIMIENTO
+                </h1>
+                <div class="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600 font-medium">Taller de Cosmetología & Estética</p>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="text-center mb-12">
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    Por medio del presente documento se certifica que
+                </p>
+                
+                <div class="mb-8">
+                    <input type="text" 
+                           id="participantName" 
+                           placeholder="Nombre del participante"
+                           class="text-3xl font-bold text-center border-none outline-none bg-transparent text-gray-800 placeholder-gray-400 w-full max-w-md signature-line pb-2"
+                           style="font-family: 'Playfair Display', serif;">
+                </div>
+
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto">
+                    Ha participado exitosamente en el <strong>Taller de Cosmetología & Estética</strong>, 
+                    demostrando dedicación, interés y compromiso en el aprendizaje de técnicas profesionales 
+                    de belleza y cuidado estético.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600 mb-2">Fecha de finalización:</label>
+                        <input type="date" 
+                               id="completionDate" 
+                               class="w-full p-2 border-2 border-gray-300 rounded-lg focus:border-pink-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600 mb-2">Duración del taller:</label>
+                        <input type="text" 
+                               id="duration" 
+                               placeholder="Ej: 40 horas académicas"
+                               class="w-full p-2 border-2 border-gray-300 rounded-lg focus:border-pink-500 outline-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Firmas -->
+            <div class="grid md:grid-cols-2 gap-12 mb-8">
+                <div class="text-center">
+                    <div class="signature-line mb-4 h-16"></div>
+                    <input type="text" 
+                           id="instructorName" 
+                           placeholder="Nombre del instructor"
+                           class="text-center font-medium text-gray-700 bg-transparent border-none outline-none w-full">
+                    <p class="text-sm text-gray-500 mt-1">Instructor Certificado</p>
+                </div>
+                <div class="text-center">
+                    <div class="signature-line mb-4 h-16"></div>
+                    <input type="text" 
+                           id="directorName" 
+                           placeholder="Nombre del director"
+                           class="text-center font-medium text-gray-700 bg-transparent border-none outline-none w-full">
+                    <p class="text-sm text-gray-500 mt-1">Director Académico</p>
+                </div>
+            </div>
+
+            <!-- Footer ornamental -->
+            <div class="text-center">
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                    <div class="ornament text-2xl">💄</div>
+                    <div class="ornament text-2xl">✨</div>
+                    <div class="ornament text-2xl">🌸</div>
+                </div>
+                <p class="text-sm text-gray-500">
+                    Este certificado reconoce la dedicación y el aprendizaje en el arte de la belleza
+                </p>
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="no-print mt-6 text-center space-x-4">
+            <button onclick="printCertificate()" 
+                    class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                🖨️ Imprimir Certificado
+            </button>
+            <button onclick="clearForm()" 
+                    class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                🔄 Limpiar Formulario
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Establecer fecha actual por defecto
+        document.getElementById('completionDate').value = new Date().toISOString().split('T')[0];
+
+        function printCertificate() {
+            // Validar que el nombre esté completo
+            const participantName = document.getElementById('participantName').value.trim();
+            if (!participantName) {
+                alert('Por favor, ingresa el nombre del participante antes de imprimir.');
+                document.getElementById('participantName').focus();
+                return;
+            }
+            
+            window.print();
+        }
+
+        function clearForm() {
+            document.getElementById('participantName').value = '';
+            document.getElementById('completionDate').value = new Date().toISOString().split('T')[0];
+            document.getElementById('duration').value = '';
+            document.getElementById('instructorName').value = '';
+            document.getElementById('directorName').value = '';
+            document.getElementById('participantName').focus();
+        }
+
+        // Auto-focus en el nombre del participante
+        document.getElementById('participantName').focus();
+
+        // Mejorar la experiencia de usuario con enter
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.target.type === 'text') {
+                const inputs = Array.from(document.querySelectorAll('input[type="text"], input[type="date"]'));
+                const currentIndex = inputs.indexOf(e.target);
+                if (currentIndex < inputs.length - 1) {
+                    inputs[currentIndex + 1].focus();
+                }
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97eb80f39537de00',t:'MTc1NzgwNjk3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica - Cosmetología & Estética</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .custom-pink {
+            background-color: #F7B5D3;
+        }
+        
+        .custom-pink-light {
+            background-color: #FDE7F3;
+        }
+        
+        .custom-pink-dark {
+            background-color: #E879B9;
+        }
+        
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+                margin: 0;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+        
+        .fill-line {
+            border-bottom: 1px solid #666;
+            display: inline-block;
+            min-width: 200px;
+            height: 20px;
+            margin: 0 5px;
+        }
+        
+        .fill-line-short {
+            border-bottom: 1px solid #666;
+            display: inline-block;
+            min-width: 100px;
+            height: 20px;
+            margin: 0 5px;
+        }
+        
+        .checkbox-print {
+            width: 15px;
+            height: 15px;
+            border: 2px solid #666;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        .signature-line {
+            border-bottom: 2px solid #666;
+            height: 60px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <!-- Header -->
+        <div class="custom-pink p-6">
+            <div class="flex items-center justify-between">
+                <div class="flex-1">
+                    <h1 class="text-2xl font-bold text-gray-800 mb-2">FICHA TÉCNICA</h1>
+                    <h2 class="text-xl font-semibold text-gray-700">Cosmetología & Estética</h2>
+                </div>
+                <div class="flex justify-center">
+                    <div class="flex justify-center left-0 top-2 w-32 bg-gray-100 rounded-xl">
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/1J8DZ0n6/Dise-o-sin-t-tulo.png" alt="Dise-o-sin-t-tulo" border="0"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Content -->
+        <div class="p-6 space-y-6">
+            <!-- Información Personal -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">INFORMACIÓN PERSONAL</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <span class="text-sm font-medium text-gray-700 w-32">Nombre Completo *:</span>
+                        <span class="fill-line flex-1"></span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm font-medium text-gray-700 w-32">Fecha de Nacimiento:</span>
+                        <span class="fill-line-short"></span>
+                        <span class="text-sm font-medium text-gray-700 ml-8 w-20">Teléfono *:</span>
+                        <span class="fill-line flex-1"></span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-sm font-medium text-gray-700 w-32">Email:</span>
+                        <span class="fill-line flex-1"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Historial de Visitas -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">HISTORIAL DE VISITAS</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <span class="text-sm font-medium text-gray-700 w-24">Primera Visita:</span>
+                        <span class="fill-line-short"></span>
+                        <span class="text-sm font-medium text-gray-700 ml-8 w-24">Última Visita:</span>
+                        <span class="fill-line-short"></span>
+                        <span class="text-sm font-medium text-gray-700 ml-8 w-24">Próxima Cita:</span>
+                        <span class="fill-line-short"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Análisis de Piel -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">ANÁLISIS DE PIEL</h3>
+                
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de Piel *</label>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Grasa</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Seca</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Mixta</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Sensible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Condiciones de la Piel (marque todas las que apliquen)</label>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Acné</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Manchas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Arrugas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Poros dilatados</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Rosácea</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Cicatrices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Observaciones del Análisis</label>
+                    <div class="space-y-2">
+                        <span class="fill-line w-full block"></span>
+                        <span class="fill-line w-full block"></span>
+                        <span class="fill-line w-full block"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alergias y Sensibilidades -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">ALERGIAS Y SENSIBILIDADES</h3>
+                
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">¿Es alérgica a algún producto cosmético? *</label>
+                    <div class="flex space-x-6">
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Sí</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">No</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Especifique alergias conocidas</label>
+                    <div class="space-y-2">
+                        <span class="fill-line w-full block"></span>
+                        <span class="fill-line w-full block"></span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Ingredientes que debe evitar</label>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Parabenos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Sulfatos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Fragancias</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Alcohol</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Retinol</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Ácidos</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rutina Actual -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">RUTINA ACTUAL DE CUIDADO</h3>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Productos que usa actualmente</label>
+                        <div class="space-y-2">
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Frecuencia de uso</label>
+                        <div class="space-y-2">
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">¿Usa protector solar diariamente?</label>
+                    <div class="flex space-x-6">
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">Sí</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">No</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="checkbox-print"></span>
+                            <span class="text-sm">A veces</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tratamientos Realizados -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">TRATAMIENTOS REALIZADOS</h3>
+                
+                <div class="space-y-6">
+                    <!-- Tratamiento 1 -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <div class="grid grid-cols-3 gap-4 mb-3">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-12">Fecha:</span>
+                                <span class="fill-line-short flex-1"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-20">Tratamiento:</span>
+                                <span class="fill-line flex-1"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-20">Profesional:</span>
+                                <span class="fill-line flex-1"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-sm font-medium text-gray-700">Observaciones:</span>
+                            <div class="space-y-1 mt-1">
+                                <span class="fill-line w-full block"></span>
+                                <span class="fill-line w-full block"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tratamiento 2 -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <div class="grid grid-cols-3 gap-4 mb-3">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-12">Fecha:</span>
+                                <span class="fill-line-short flex-1"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-20">Tratamiento:</span>
+                                <span class="fill-line flex-1"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-20">Profesional:</span>
+                                <span class="fill-line flex-1"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-sm font-medium text-gray-700">Observaciones:</span>
+                            <div class="space-y-1 mt-1">
+                                <span class="fill-line w-full block"></span>
+                                <span class="fill-line w-full block"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tratamiento 3 -->
+                    <div class="pb-4">
+                        <div class="grid grid-cols-3 gap-4 mb-3">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-12">Fecha:</span>
+                                <span class="fill-line-short flex-1"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-20">Tratamiento:</span>
+                                <span class="fill-line flex-1"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium text-gray-700 w-20">Profesional:</span>
+                                <span class="fill-line flex-1"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-sm font-medium text-gray-700">Observaciones:</span>
+                            <div class="space-y-1 mt-1">
+                                <span class="fill-line w-full block"></span>
+                                <span class="fill-line w-full block"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recomendaciones -->
+            <section class="border-b border-gray-200 pb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 custom-pink p-3 rounded-lg">RECOMENDACIONES Y PLAN DE TRATAMIENTO</h3>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Productos recomendados</label>
+                        <div class="space-y-2">
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Plan de tratamientos</label>
+                        <div class="space-y-2">
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Cuidados especiales</label>
+                        <div class="space-y-2">
+                            <span class="fill-line w-full block"></span>
+                            <span class="fill-line w-full block"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Firma y Fecha -->
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Firma del Cliente</label>
+                        <div class="signature-line"></div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Firma del Profesional</label>
+                        <div class="signature-line"></div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <div class="flex items-center justify-center">
+                        <span class="text-sm text-gray-700 mr-2">Fecha de elaboración:</span>
+                        <span class="fill-line-short"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="custom-pink-light p-4 text-center">
+            <p class="text-sm text-gray-700">
+                Esta ficha técnica es confidencial y de uso exclusivo del establecimiento
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Función para imprimir la ficha
+        function printForm() {
+            window.print();
+        }
+        
+        // Agregar botón de impresión
+        document.addEventListener('DOMContentLoaded', function() {
+            const printButton = document.createElement('button');
+            printButton.innerHTML = '🖨️ Imprimir Ficha';
+            printButton.className = 'no-print fixed top-4 right-4 bg-pink-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-600 transition-colors z-50';
+            printButton.onclick = printForm;
+            document.body.appendChild(printButton);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97eb88fe733bde00',t:'MTc1NzgwNzMwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
